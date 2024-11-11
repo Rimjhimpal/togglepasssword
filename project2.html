@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="password" id="password">
+        <span onclick="togglepassword()" id="togglepassword">	👁</span>
+    </div>
+    <script>
+        function togglepassword(){
+            const password = document.getElementById('password');
+            const togglePasswordButton = document.getElementById('togglepassword');
+
+            if(password.type==='password'){
+               password.type='text';
+            
+            togglePasswordButton.textcontent='';
+            }
+            else{
+                password.type='password';
+                togglePasswordbutton.textcontent='👁';
+            }
+        }
+    </script>
+</body>
+</html>
